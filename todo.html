@@ -1,0 +1,105 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+body{
+    height: 100px;
+    background:black;
+}
+.container{
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    background: white;
+    border-radius:5px;
+    min-width: 400px;
+    position: absolute;
+    min-height:400px;
+    transform: translate(-50%,-50%);
+}
+#newtask{
+    position: relative;
+    padding: 30px 20px;
+}
+#newtask input{
+    width: 78%;
+    height: 45px;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+    font-family:cursive;
+    font-size: 18px;
+    border: 2px solid #d1d3d4;
+}
+
+#newtask input:focus{
+    outline: none;
+    border-color: #ff5722;
+}
+#newtask button{
+    position: relative;
+    float: right;
+    font-weight: 500;
+    font-size: 18px;
+    background-color:#ff5722;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family:cursive;
+}
+#tasks{
+    border-radius:5px;
+    width:94%;
+    position: relative;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top:5px;
+}
+
+.task{
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #795548;
+    cursor: pointer;
+    background-color: #607d8b;
+    height: 50px;
+    margin-bottom: 5px;
+    padding:10px;
+    display: flex;
+}
+.task span{
+    font-family:cursive;
+    font-size: 18px;
+    font-weight: 400;
+}
+.task button{
+    background-color: #6583e5;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+}
+
+</style>
+<body>
+<div class="container">
+  <div id="newtask">
+      <input type="text" placeholder="Write here.....">
+      <button id="push" onclick="myFunction()">Add</button>
+  </div>
+  <div id="tasks"></div>
+</div>
+<script src="scrits.js"></script>
+</body>
+</html>
